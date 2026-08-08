@@ -1,17 +1,40 @@
 aid: astera-labs
 name: Astera Labs
-description: 'Astera Labs is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Astera Labs, Inc. (NASDAQ: ALAB) is a semiconductor company building
+  purpose-built connectivity solutions for rack-scale AI and cloud infrastructure.
+  Its Intelligent Connectivity Platform spans the Aries PCIe/CXL Smart DSP Retimers,
+  Smart Cable Modules and Smart Gearboxes, the Taurus Ethernet Smart Retimers and
+  Smart Redrivers, the Leo CXL Smart Memory Controllers, and the Scorpio Smart Fabric
+  Switches, all managed by COSMOS (COnnectivity System Management and Optimization
+  Software). COSMOS is the software layer of the platform: firmware modules on the
+  devices plus platform-level libraries that run on hosts and baseboard management
+  controllers, exposing what Astera Labs describes as a single standardized API for
+  device discovery, configuration, security attestation, firmware update, telemetry,
+  link diagnostics, RAS testing, scripting and fleet management. That API surface is
+  an on-premises host/BMC SDK rather than a public web API: the COSMOS Developer Kit
+  is offered through a "Contact Us" motion and the supporting application notes are
+  released through a document-request form, so no public API reference or
+  machine-readable specification is published.'
+image: https://www.asteralabs.com/wp-content/uploads/2025/09/ALAB_OGImage.jpg
 url: https://raw.githubusercontent.com/api-evangelist/astera-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Semiconductors
+- Hardware
+- AI Infrastructure
+- Data Center
+- Connectivity
+- PCIe
+- CXL
+- Ethernet
+- Fleet Management
+- Telemetry
+- Device Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +42,43 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/astera-labs-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/astera-labs_stock/
+  url: https://www.asteralabs.com/
+- type: Blog
+  url: https://www.asteralabs.com/resources/blog/
+- type: GitHubOrganization
+  url: https://github.com/AsteraLabs
+- type: TermsOfService
+  url: https://www.asteralabs.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.asteralabs.com/privacy-policy/
+- type: Security
+  url: https://www.asteralabs.com/resources/security/
+- type: VulnerabilityDisclosure
+  url: security/astera-labs-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/astera-labs-llms.txt
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    The COSMOS Developer Kit page markets "a single, standardized API" for
+    device control, telemetry and fleet management but ships a "Contact Us"
+    button instead of a reference, and every supporting application note (Aries
+    CScripts, IOMT, security, self-test) is released only through a
+    document-request form that requires a company email address.
+  evidence:
+  - url: https://www.asteralabs.com/products/cosmos-dev-kit/
+    status: 200
+  - url: https://www.asteralabs.com/document-requests/
+    status: 200
+  - url: https://www.asteralabs.com/openapi.json
+    status: 404
+  checked: '2026-08-06'
