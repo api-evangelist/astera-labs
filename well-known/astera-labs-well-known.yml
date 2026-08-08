@@ -1,0 +1,40 @@
+generated: '2026-08-06'
+method: probed
+source: https://www.asteralabs.com/
+host: https://www.asteralabs.com
+note: >-
+  Every RFC 8615 well-known path probed on the only reachable Astera Labs host
+  returned 404. The developer/API subdomains that would normally carry these
+  documents (developer., docs., api., cosmos., support., portal.) do not resolve
+  at all. No pointer is wired for this file — recording the absence, not
+  claiming a discovery surface.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+unresolved_hosts:
+- developer.asteralabs.com
+- docs.asteralabs.com
+- api.asteralabs.com
+- cosmos.asteralabs.com
+- support.asteralabs.com
+- portal.asteralabs.com
+- login.asteralabs.com
+- partner.asteralabs.com
+- community.asteralabs.com
+- status.asteralabs.com
+- trust.asteralabs.com
+x-evidence:
+  fetched: '2026-08-06'
+  method: HTTP GET, curl, follow redirects
