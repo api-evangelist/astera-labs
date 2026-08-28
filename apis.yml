@@ -15,6 +15,17 @@ description: 'Astera Labs, Inc. (NASDAQ: ALAB) is a semiconductor company buildi
   is offered through a "Contact Us" motion and the supporting application notes are
   released through a document-request form, so no public API reference or
   machine-readable specification is published.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.asteralabs.com/wp-content/uploads/2025/09/ALAB_OGImage.jpg
 url: https://raw.githubusercontent.com/api-evangelist/astera-labs/refs/heads/main/apis.yml
 x-type: company
