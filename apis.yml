@@ -28,6 +28,9 @@ deliveryModel:
   method: derived
 image: https://www.asteralabs.com/wp-content/uploads/2025/09/ALAB_OGImage.jpg
 url: https://raw.githubusercontent.com/api-evangelist/astera-labs/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "That API surface is an on-premises host/BMC SDK rather than a public web API: the COSMOS Developer Kit is offered through a 'Contact Us' motion and the supporting application notes are released throug"
 x-type: company
 x-source: harvest:secondary-market
 specificationVersion: '0.23'
