@@ -53,7 +53,7 @@ tags:
 - Semiconductors
 - Hardware
 - AI Infrastructure
-- Data-Center
+- Data Center
 - Connectivity
 - PCIe
 - CXL
@@ -74,6 +74,7 @@ tags_raw:
 - Fleet Management
 - Telemetry
 - Device Management
+- Data-Center
 apis: []
 maintainers:
 - FN: Kin Lane
